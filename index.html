@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedro Lora · Writer and Illustrator</title>
+<meta name="description" content="Pedro Lora, writer and illustrator. Author of The non Pandora box: Twenty-Four Stories Told by a Cockroach.">
+<meta property="og:title" content="Pedro Lora · Writer and Illustrator">
+<meta property="og:description" content="Twenty-four darkly funny stories narrated by a cockroach who lives under your refrigerator.">
+<meta property="og:image" content="img/portada-og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0c0f;
+    --panel: #17151b;
+    --text: #ece8e1;
+    --muted: #a39d94;
+    --red: #e3121b;
+    --line: #2b2830;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.7 "Libre Baskerville", Georgia, serif;
+  }
+  a { color: var(--text); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0; border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .name { font-family: Anton, Impact, sans-serif; font-size: 28px; letter-spacing: .04em; text-transform: uppercase; }
+  .name span { color: var(--red); }
+  nav a { margin-left: 18px; text-decoration: none; color: var(--muted); font-size: 15px; }
+  nav a:hover { color: var(--text); }
+
+  .hero { padding: 64px 0 56px; }
+  .hero .wrap { display: grid; grid-template-columns: 340px 1fr; gap: 56px; align-items: center; }
+  .hero img { width: 100%; height: auto; box-shadow: 0 24px 60px rgba(0,0,0,.6); }
+  .kicker { color: var(--red); font-family: Anton, Impact, sans-serif; letter-spacing: .12em; text-transform: uppercase; font-size: 15px; }
+  h1 { font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(40px, 6vw, 68px); line-height: 1.02; margin: 8px 0 6px; text-transform: uppercase; }
+  .sub { font-style: italic; color: var(--muted); font-size: 19px; margin: 0 0 24px; }
+  .lead { font-size: 19px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .btn { display: inline-block; padding: 13px 22px; text-decoration: none; font-family: Anton, Impact, sans-serif; letter-spacing: .06em; text-transform: uppercase; font-size: 16px; border: 2px solid var(--red); }
+  .btn.primary { background: var(--red); color: #fff; }
+  .btn:hover { filter: brightness(1.15); }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-family: Anton, Impact, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: .04em; font-size: 34px; margin: 0 0 20px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  blockquote { margin: 0; padding: 20px 24px; background: var(--panel); border-left: 4px solid var(--red); font-style: italic; color: var(--muted); }
+  .facts { list-style: none; padding: 0; margin: 0; color: var(--muted); font-size: 15px; }
+  .facts li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .facts b { color: var(--text); font-weight: 700; }
+
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .gallery img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; background: #fff; }
+
+  .contact { text-align: center; }
+  .contact .email { font-size: 22px; word-break: break-all; }
+  footer { padding: 28px 0 40px; color: var(--muted); font-size: 14px; text-align: center; border-top: 1px solid var(--line); }
+
+  @media (max-width: 760px) {
+    .hero { padding: 40px 0; }
+    .hero .wrap { grid-template-columns: 1fr; gap: 32px; }
+    .hero img { max-width: 300px; margin: 0 auto; display: block; }
+    .cols { grid-template-columns: 1fr; gap: 28px; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    nav a { margin: 0 14px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="name">Pedro <span>Lora</span></div>
+    <nav>
+      <a href="#book">The book</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="book">
+    <div class="wrap">
+      <img src="img/portada.jpg" alt="Cover of The non Pandora box by Pedro Lora" width="700" height="1050">
+      <div>
+        <div class="kicker">New · Short stories</div>
+        <h1>The non Pandora box</h1>
+        <p class="sub">Twenty-Four Stories Told by a Cockroach</p>
+        <p class="lead">The one telling you this story lives under your refrigerator.</p>
+        <p>Twenty-four stories told from the floor: from the crack in the wall, from the corner, from where nobody looks. The narrator is a cockroach. She survived the bomb. She dodges flyswatters. She falls in love, she dreams, she watches the evening news and has sharper things to say about world affairs than the people on screen.</p>
+        <div class="buttons">
+          <a class="btn primary" href="https://www.amazon.com/dp/B0HFFD674Z" target="_blank" rel="noopener">Buy on Amazon</a>
+          <a class="btn" href="https://www.amazon.com/dp/B0HFZF3NX7" target="_blank" rel="noopener">Edición en español</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap cols">
+      <div>
+        <h2>Satire that bites</h2>
+        <p>Pedro Lora writes satire that bites first and then, without warning, turns tender. Black humor, poetry that ambushes you in the middle of an infestation, and a street voice that refuses to be translated. Short stories you read in five minutes and carry for weeks: <i>The Day of the Bomb</i>, <i>The Island in the Sky</i>, <i>The Terror of the Flyswatters</i>, <i>The Sky-Blue Cats</i>, <i>Pandora's Box Bursts Open</i>.</p>
+        <blockquote>"This literary product contains information and images that may provoke mental imbalance. We take no responsibility for the psychological or psychiatric problems it may cause the reader."<br>— Warning on the first page</blockquote>
+      </div>
+      <div>
+        <h2>The edition</h2>
+        <ul class="facts">
+          <li><b>Formats:</b> paperback and Kindle eBook</li>
+          <li><b>Paperback:</b> 80 pages, 6 × 9 in, full color</li>
+          <li><b>Illustrated:</b> one full-page plate by the author for every story</li>
+          <li><b>Language:</b> English · also in Spanish as <i>La caja no pandora</i></li>
+          <li><b>Published:</b> 2026, independently</li>
+          <li><b>ISBN:</b> 979-8192565834</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>From the book</h2>
+      <div class="gallery">
+        <img src="img/lamina1.jpg" alt="Drawing of a cockroach by Pedro Lora" loading="lazy">
+        <img src="img/lamina2.jpg" alt="Illustration from The non Pandora box" loading="lazy">
+        <img src="img/lamina3.jpg" alt="Illustration from The non Pandora box" loading="lazy">
+        <img src="img/lamina4.jpg" alt="Illustration from The non Pandora box" loading="lazy">
+        <img src="img/lamina5.jpg" alt="Illustration from The non Pandora box" loading="lazy">
+        <img src="img/lamina6.jpg" alt="Illustration from The non Pandora box" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About the author</h2>
+      <p>Pedro Lora is a writer and illustrator. He writes satire that bites first and then, without warning, turns tender: black humor, poetry and absurd stories told from the places nobody looks. <i>The non Pandora box</i>, a collection of twenty-four stories narrated by a cockroach who lives under your refrigerator, is illustrated with his own drawings, one plate for every story. The book is also available in Spanish as <i>La caja no pandora</i>.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Reviews, interviews, readings and review copies:</p>
+      <p class="email"><a href="mailto:williamlabori4@gmail.com">williamlabori4@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Pedro Lora. All rights reserved.</footer>
+
+</body>
+</html>
